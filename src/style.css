@@ -17,7 +17,7 @@ body {
 	flex-direction: row;
 }
 
-div {
+.page_section {
 	border: solid;
 
 	box-sizing: border-box;
