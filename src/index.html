@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fondue Timer App</title>
+
+	<link rel="manifest" href="./manifest.json">
+
+	<link rel="stylesheet" href="./style.css">
+	<link rel="shortcut icon" href="./assets/fondue.png">
+
+	<script src="./script.js" defer></script>
+	<script>
+		if ('serviceworker' in navigator) {
+			//navigator.serviceworker.register('./script.js');
+		}
+	</script>
+</head>
+<body>
+	<div class="menu">
+		<button class="menu_toggle" onclick="toggleMenu()"></button>
+	</div>
+	<div class="main">
+		
+	</div>
+</body>
+</html>

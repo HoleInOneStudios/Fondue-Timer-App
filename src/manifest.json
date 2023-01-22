@@ -1,0 +1,10 @@
+{
+	"name": "Fondue Cooking Timer App",
+	"short_name": "Fondue Timer",
+	"start_url": "./",
+	"icons": [
+
+	],
+	"display": "fullscreen",
+	"orientation": "portrait"
+}
