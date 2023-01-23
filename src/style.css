@@ -1,5 +1,7 @@
 html {
 	scroll-behavior: smooth;
+	text-align: center;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -15,28 +17,38 @@ body {
 	flex-direction: row;
 }
 
-.menu {
+div.menu {
 	position: absolute;
 	left: 0;
+	bottom: 0;
 	top: 0;
 
 	width: min(10%, 50px);
-	height: 100%;
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 
-	display: flex;
-	flex-direction: column;
-
 	background: #505050;
 	border: none;
 
-	transition: width 0.25s ease-in-out;
+	transition: all 0.0s ease-in-out;
 }
 
-.menu.opened {
+div.menu.opened {
 	width: max(33.3%, 250px);
+}
+
+section.menu {
+	flex-direction: column;
+
+	display: none;
+
+	padding-top: min(9vw, 45px);
+	height: 90%;
+}
+
+section.menu.opened {
+	display: flex;
 }
 
 .menu_toggle {
@@ -104,10 +116,10 @@ body {
 .timers {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 
 	height: 100%;
+	padding: 0.5rem;
 
 	background-color: #a0a0a0;
 }
@@ -126,4 +138,19 @@ body {
 	height: 85%;
 	margin: 0.5rem;
 	aspect-ratio: 1;
+}
+
+.timer {
+	background-color: #bfbfbf;
+	border-radius: 0.5rem;
+
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	height: 18%;
+	width: 100%;
+	margin: 0.25rem;
 }
