@@ -7,10 +7,8 @@ body {
 
 	margin: 0;
 	padding: 0;
-
 	height: 100vh;
 	width: 100vw;
-
 	box-sizing: border-box;
 
 	display: flex;
@@ -21,14 +19,20 @@ body {
 	position: absolute;
 	left: 0;
 	top: 0;
-	bottom: 0;
+
+	width: min(10%, 50px);
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 
 	display: flex;
 	flex-direction: column;
 
-	background: #505050aa;
+	background: #505050;
+	border: none;
 
-	width: min(10%, 50px);
+	transition: width 0.25s ease-in-out;
 }
 
 .menu.opened {
@@ -70,40 +74,47 @@ body {
 	display: flex;
 	flex-direction: column;
 
-	width: 100%;
-	margin-left: min(10%, 50px);
-
-}
-
-.page_section {
-	border: none;
-
 	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+	width: 100%;
+	margin: 0 0 0 min(10%, 50px);
+
+	border: none;
 
 	transition: width 0.25s ease-in-out;
 }
 
-section.forks, section.foods {
+.forks, .foods {
 	display: flex;
 	flex-direction: row;
-	height: 20vh;
+	box-sizing: border-box;
+	height: 20%;
 
 	overflow-x: auto;
 	overflow-y: hidden;
 }
 
-section.forks {
+.forks {
 	background-color: #909090;
 }
 
-section.foods {
+.foods {
 	background-color: #989898;
 }
 
-div.forks, div.foods {
+.timers {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+
+	background-color: #a0a0a0;
+}
+
+.option {
 	background-color: #cfcfcf;
+	border-radius: 0.5rem;
 
 	box-sizing: border-box;
 
@@ -112,18 +123,7 @@ div.forks, div.foods {
 	justify-content: center;
 	align-items: center;
 
-	margin: 1%;
-	width: 100px;
-	height: 100%;
-
-	flex: 0;
-}
-
-.timers {
-	display: flex;
-	flex-direction: column;
-
-	height: 100%;
-
-	background-color: #a0a0a0;
+	height: 85%;
+	margin: 0.5rem;
+	aspect-ratio: 1;
 }
